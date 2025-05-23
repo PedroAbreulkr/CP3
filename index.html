@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CP3 Pedro Abreu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro de Produtos</h1>
+
+  <form id="formprod">
+    <label>Nome do Produto:
+      <input type="text" id="nome">
+    </label><br><br>
+
+    <label>Preço:
+      <input type="number" id="preco" step="0.01">
+    </label><br><br>
+
+    <label>Categoria:
+      <select id="categoria">
+        <option value="">Selecione...</option>
+        <option value="Tecnologia">Tecnologia</option>
+        <option value="Alimentos">Alimentos</option>
+        <option value="Vestuário">Vestuário</option>
+      </select>
+    </label><br><br>
+
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+
+  <p id="mensagemerro" class="erro"></p>
+
+  <h2>Produtos Cadastrados</h2>
+  <ul id="lista"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
